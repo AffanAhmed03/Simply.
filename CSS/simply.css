@@ -1,0 +1,358 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+button{
+  cursor: pointer;
+}
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 767px) {
+  .container {
+    width: calc(100% - 150px);
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: calc(100% - 200px);
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: calc(100% - 350px);
+  }
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  header .container {
+    flex-direction: column;
+  }
+}
+header .container h1 {
+  font-family: "Times New Roman", Times, serif;
+  color: rgb(24, 42, 24);
+}
+header .container span {
+  color: aqua;
+}
+header .container ul {
+  display: flex;
+}
+@media (max-width: 767px) {
+  header .container ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: -50px;
+  }
+}
+header .container ul li {
+  list-style-type: none;
+  padding: 12px 18px;
+  display: block;
+}
+header .container ul li a {
+  text-decoration: none;
+  color: rgb(24, 42, 24);
+  font-weight: bold;
+  display: block;
+  font-size: 14px;
+}
+header .container ul li a:hover {
+  color: aqua;
+}
+.landing {
+  background-image: url(../images/image\ 1.jpg);
+  background-size: contain;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.landing .text {
+  text-align: center;
+}
+.landing .text h1 {
+  text-transform: uppercase;
+  font-size: 50px;
+  color: rgb(24, 42, 24);
+  margin-bottom: 0;
+}
+.landing .text p {
+  color: rgb(24, 42, 24);
+  font-size: 50px;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+.landing .text button {
+  padding: 10px 40px;
+  font-size: 18px;
+  border: none;
+  color: white;
+  background-color: rgb(24, 42, 24);
+  cursor: pointer;
+}
+.items {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.items .container .flex-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .items .container .flex-box {
+    flex-direction: column;
+  }
+}
+.items .container .flex-box .box {
+  flex-basis: 30%;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .items .container .flex-box .box {
+    margin-bottom: 30px;
+  }
+}
+.items .container .flex-box .box i {
+  font-size: 30px;
+  padding: 20px;
+  color: rgb(24, 42, 24);
+  border-radius: 50%;
+  border: 3px solid rgb(24, 42, 24);
+}
+.items .container .flex-box .box h2 {
+  font-size: 22px;
+  color: rgb(24, 42, 24);
+  text-transform: uppercase;
+}
+.items .container .flex-box .box p {
+  color: gray;
+  line-height: 1.4;
+}
+.content {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: rgb(224, 244, 237);
+  text-align: center;
+}
+.content h2 {
+  color: rgb(24, 42, 24);
+  text-transform: uppercase;
+  font-size: 34px;
+  position: relative;
+}
+.content h2::before {
+  content: "";
+  position: absolute;
+  width: 250px;
+  height: 3px;
+  background-color: aqua;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+}
+.content p {
+  color: gray;
+  line-height: 1.4;
+}
+.content iframe {
+  width: 100%;
+}
+
+.secondary-content {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.secondary-content .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-column-gap: 40px;
+  grid-row-gap: 100px;
+}
+@media(max-width: 767px) {
+  .secondary-content .grid{
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
+}
+.secondary-content .grid .box {
+  background: url(https://static8.depositphotos.com/1342384/819/i/950/depositphotos_8196312-stock-photo-vintgar-gorge-and-wood-path.jpg);
+  background-size: cover;
+}
+.secondary-content .grid .box .text {
+  width: 50%;
+  height: 300px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.71);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+@media (max-width: 767px) {
+  .secondary-content .grid .box .text {
+    width: 100%;
+  }
+}
+.secondary-content .grid .box .text h2 {
+  color: rgb(24, 42, 24);
+  text-transform: uppercase;
+  font-size: 28px;
+  position: relative;
+}
+.secondary-content .grid .box .text h2::before {
+  content: "";
+  position: absolute;
+  width: 130px;
+  height: 2px;
+  background-color: aqua;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+}
+.secondary-content .grid .box .text p {
+  color: rgb(104, 96, 96);
+  line-height: 1.6;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.secondary-content .grid .box .text button {
+  color: aqua;
+  font-size: 14px;
+  padding: 5px 20px;
+  border: 2px solid aqua;
+  background-color: transparent;
+}
+.secondary-content .grid .box .text button:hover {
+  background-color: rgba(0, 0, 0, 0.808);
+  color: white;
+  border-color: white;
+}
+.secondary-content .grid .box2 {
+  background: url(https://images.unsplash.com/photo-1612450639537-d44bc045efc7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c25vdyUyMG1vdW50YWlufGVufDB8fDB8fA%3D%3D&w=1000&q=80);
+  background-size: cover;
+}
+.secondary-content .grid .box2 .text {
+  width: 50%;
+  height: 320px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.71);
+  padding-top: 20px;
+}
+@media (max-width: 767px) {
+  .secondary-content .grid .box2 .text {
+    width: 100%;
+  }
+}
+.secondary-content .grid .box2 .text h2 {
+  color: rgb(24, 42, 24);
+  text-transform: uppercase;
+  font-size: 28px;
+  position: relative;
+}
+.secondary-content .grid .box2 .text h2::before {
+  content: "";
+  position: absolute;
+  width: 130px;
+  height: 2px;
+  background-color: aqua;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+}
+.secondary-content .grid .box2 .text p {
+  color: rgb(104, 96, 96);
+  line-height: 1.6;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.secondary-content .grid .box2 .text button {
+  color: aqua;
+  font-size: 14px;
+  padding: 5px 20px;
+  border: 2px solid aqua;
+  background-color: transparent;
+}
+.secondary-content .grid .box2 .text button:hover {
+  background-color: rgba(0, 0, 0, 0.808);
+  color: white;
+  border-color: white;
+}
+
+.heard {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+.heard .container h2 {
+  color: rgb(24, 42, 24);
+  text-transform: uppercase;
+  font-size: 34px;
+  position: relative;
+  text-align: center;
+}
+.heard .container h2::before {
+  content: "";
+  position: absolute;
+  width: 250px;
+  height: 3px;
+  background-color: aqua;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+}
+.heard .container p {
+  color: gray;
+  line-height: 1.4;
+  margin-bottom: 30px;
+}
+.heard .container button {
+  padding: 10px 30px;
+  color: aqua;
+  border: 2px solid aqua;
+  background-color: white;
+}
+.heard .container button:hover {
+  background-color: rgba(0, 0, 0, 0.808);
+  color: white;
+  border-color: white;
+}
+
+footer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: rgb(224, 244, 237);
+}
+footer .container {
+  display: flex;
+  justify-content: space-around;
+}
+@media(max-width: 767px) {
+  footer .container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+footer .container .copy-right p{
+  color: black;
+}
+footer .container .copy-right a{
+  color: aqua;
+}
+footer .container .options h5{
+  font-size: 18px;
+}
+footer .container .options ul li {
+  list-style-type: none;
+  padding: 10px 5px;
+  color: gray;
+}
+@media(max-width: 767px) {
+  footer .container .options ul{
+    margin-left: -35px;
+  }
+}
